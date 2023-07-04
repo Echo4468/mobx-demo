@@ -8,7 +8,7 @@ const Counter = () => {
     <div>
       <h3 style={{ color: "deeppink" }}>计数器</h3>
       <div>
-        点击次数：{counter.count} ({counter.doubleCount})
+        竹子数量：{counter.count} ({counter.doubleCount})
       </div>
       <br />
       <button onClick={() => counter.increment()}>加1</button>

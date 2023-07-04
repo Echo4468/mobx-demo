@@ -5,13 +5,13 @@ class Animal{
     makeAutoObservable(this, {lion: false}, {autoBind: true})
     makePersistable(this, {
       name: 'key', // 存储到localStorage的key值
-      properties: ['panda'], // 需要持久化的数据
-      storage: window.localStorage, 
+      properties: ['lion'], // 需要持久化的数据
+      storage: window.sessionStorage, 
     })
 
   }
   panda = 0
-  lion = 0
+  lion = 100
   addPanda(){
     this.panda++
   }
